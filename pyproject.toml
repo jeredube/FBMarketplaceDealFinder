@@ -1,5 +1,5 @@
 [project]
-name = "fbmarketplacedealfindervenv"
+name = "fbmarketplace-deal-finder"
 version = "0.1.0"
 description = "All the libs needed are in here for this to run."
 authors = [
@@ -9,9 +9,17 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "notebook (>=7.4.4,<8.0.0)",
-    "ipykernel (>=6.30.1,<7.0.0)"
+    "ipykernel (>=6.30.1,<7.0.0)",
+    "splinter (>=0.20.0,<1.0.0)",
+    "beautifulsoup4 (>=4.12.0,<5.0.0)",
+    "pandas (>=2.0.0,<3.0.0)",
+    "matplotlib (>=3.7.0,<4.0.0)",
+    "requests (>=2.31.0,<3.0.0)"
 ]
 
+
+[tool.poetry]
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
